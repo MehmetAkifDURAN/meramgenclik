@@ -34,10 +34,10 @@ nav{
     font-family: 'Raleway', sans-serif;
     width: 100%;
     position: fixed;
-    padding: 2.4rem 1rem;
+    padding: 1rem;
     z-index: 1000;
     border-bottom:2px solid #003A85;
-    /* border-bottom:2px solid #CD2127; */
+    background: #fff;
 }
 #logo-box{
     float: left;
@@ -106,4 +106,77 @@ nav{
 .nav-item .nav-link:hover + .sub-links-list, .sub-links-list:hover{
     display: block;
 }
-
+/*Header*/
+.slider{
+    position: relative;
+    user-select: none;
+    padding-top: 12.9rem;
+    height: 100vh;
+}
+.slider-img{
+    height: calc(100vh - 12.9rem);
+    min-width: 100%;
+    object-fit: cover;
+    object-position: 100% 50%;
+}
+.slide{
+    display: none;
+}
+.arrow{
+    position: absolute;
+    top: 50%;
+    width: auto;
+    transform: translate(0, 50%);
+    padding: 1.5rem;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.6s ease;
+    user-select: none;
+}
+.next{
+    border-radius: 0 3px 3px 0;
+    right: 0;
+}
+.prev{
+    border-radius: 3px 0px 0px 3px;
+    left: 0;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.indicator{
+    position: absolute;
+    text-align: center;
+    top: calc(105vh - 12.9rem);
+    left: calc(95vw / 2);
+}
+.dot{
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    display: inline-block;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.active, .dot:hover{
+    opacity: 1;
+}
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade{
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+@-webkit-keyframes fade{
+    from {opacity: .4;}
+    to {opacity: 1;}
+}

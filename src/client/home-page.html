@@ -9,6 +9,9 @@
     <!-- font-family: 'Raleway', sans-serif; -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!--Icon-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>Meram Gençlik</title>
     <link rel="stylesheet" href="home-page.css">
 </head>
@@ -57,6 +60,29 @@
             </div>
         </div>
     </nav>
+    <!--Header-->
+    <header>
+        <div class="slider">
+            <div class="slide fade">
+                <img src="img/slider1.jpg" class="slider-img">
+            </div>
+            <div class="slide fade">
+                <img src="img/slider2.jpg" class="slider-img">
+            </div>
+            <div class="slide fade">
+                <img src="img/slider3.jpg" class="slider-img">
+            </div>
+            <i class="fas fa-chevron-left arrow prev" onclick="plusSlides(-1)"></i>
+            <i class="fas fa-chevron-right arrow next" onclick="plusSlides(1)"></i>
+            <div class="indicator">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </header>
+    <!--Javascript-->
+    <script src="home-page.js"></script>
 </body>
 
 </html>
