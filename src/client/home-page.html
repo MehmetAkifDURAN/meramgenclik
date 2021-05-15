@@ -1,22 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Fonts-->
+    <!-- font-family: 'Crete Round', serif; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap" rel="stylesheet">
     <!-- font-family: 'Raleway', sans-serif; -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
     <!--Icon-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title>Meram Gençlik</title>
     <link rel="stylesheet" href="home-page.css">
+    <link rel="stylesheet" href="home-page-media-query.css">
 </head>
 
-<body>
+<body onresize="size()">
     <!--Navbar-->
     <nav>
         <div class="container clearfix">
@@ -25,8 +31,13 @@
                     <img id="logo-img" src="img/diyanet-logo.jpg">
                 </a>
             </div>
-            <div class="nav-links">
+            <div class="nav-links responsive">
                 <ul class="nav-links-list">
+                    <li class="nav-item">
+                        <button class="nav-link nav-icon">
+                            <i class="fas fa-bars menu-icon"></i>
+                        </button>
+                    </li>
                     <li class="nav-item">
                         <a href="" class="nav-link">ANASAYFA</a>
                     </li>
@@ -34,11 +45,14 @@
                         <a href="" class="nav-link">KURUMSAL</a>
                         <ul class="sub-links-list">
                             <li class="sub-item">
+                                <a href="" class="sub-link">HAKKIMIZDA</a>
+                            </li>
+                            <!-- <li class="sub-item">
                                 <a href="" class="sub-link">MİSYONUMUZ</a>
                             </li>
                             <li class="sub-item">
                                 <a href="" class="sub-link">VİZYONUMUZ</a>
-                            </li>
+                            </li> -->
                             <li class="sub-item">
                                 <a href="" class="sub-link">YÖNETİM KURULU</a>
                             </li>
@@ -58,7 +72,9 @@
                     </li>
                 </ul>
             </div>
+            <!--div.nav-links sonu-->
         </div>
+        <!--div.container sonu-->
     </nav>
     <!--Header-->
     <header>
@@ -81,7 +97,475 @@
             </div>
         </div>
     </header>
+    <!--Main-->
+    <main>
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <i class="fas fa-angle-double-right section-header-icon"></i>
+                    <h2>
+                        <a href="">Haberler</a>
+                    </h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="container relative">
+                <div class="container news">
+                    <div class="col n-col">
+                        <div class="card">
+                            <a href="" class="card-img-link">
+                                <img src="img/slider1.jpg" class="card-img">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="">Meram Gençlik</a>
+                                </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Consectetur suscipit nulla delectus dignissimos, doloremque sint.</p>
+                                <div class="card-link-box">
+                                    <a href="" class="card-link">
+                                        Devamını Oku
+                                        <i class="fas fa-angle-double-right card-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer clearfix">
+                                <div class="click-number-box">
+                                    <span class="click-number">123</span>
+                                    Görüntülenme
+                                </div>
+                                <div class="date">04.05.2021</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col n-col">
+                        <div class="card">
+                            <a href="" class="card-img-link">
+                                <img src="img/slider2.jpg" class="card-img">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="">Meram Gençlik</a>
+                                </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Consectetur suscipit nulla delectus dignissimos, doloremque sint.</p>
+                                <div class="card-link-box">
+                                    <a href="" class="card-link">
+                                        Devamını Oku
+                                        <i class="fas fa-angle-double-right card-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer clearfix">
+                                <div class="click-number-box">
+                                    <span class="click-number">123</span>
+                                    Görüntülenme
+                                </div>
+                                <div class="date">04.05.2021</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col n-col">
+                        <div class="card">
+                            <a href="" class="card-img-link">
+                                <img src="img/slider3.jpg" class="card-img">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="">Meram Gençlik</a>
+                                </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Consectetur suscipit nulla delectus dignissimos, doloremque sint.</p>
+                                <div class="card-link-box">
+                                    <a href="" class="card-link">
+                                        Devamını Oku
+                                        <i class="fas fa-angle-double-right card-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer clearfix">
+                                <div class="click-number-box">
+                                    <span class="click-number">123</span>
+                                    Görüntülenme
+                                </div>
+                                <div class="date">04.05.2021</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col n-col">
+                        <div class="card">
+                            <a href="" class="card-img-link">
+                                <img src="img/slider4.jpg" class="card-img">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="">Meram Gençlik</a>
+                                </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Consectetur suscipit nulla delectus dignissimos, doloremque sint.</p>
+                                <div class="card-link-box">
+                                    <a href="" class="card-link">
+                                        Devamını Oku
+                                        <i class="fas fa-angle-double-right card-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer clearfix">
+                                <div class="click-number-box">
+                                    <span class="click-number">123</span>
+                                    Görüntülenme
+                                </div>
+                                <div class="date">04.05.2021</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col n-col">
+                        <div class="card">
+                            <a href="" class="card-img-link">
+                                <img src="img/slider5.jpg" class="card-img">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="">Meram Gençlik</a>
+                                </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Consectetur suscipit nulla delectus dignissimos, doloremque sint.</p>
+                                <div class="card-link-box">
+                                    <a href="" class="card-link">
+                                        Devamını Oku
+                                        <i class="fas fa-angle-double-right card-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer clearfix">
+                                <div class="click-number-box">
+                                    <span class="click-number">123</span>
+                                    Görüntülenme
+                                </div>
+                                <div class="date">04.05.2021</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col n-col">
+                        <div class="card">
+                            <a href="" class="card-img-link">
+                                <img src="img/slider6.jpg" class="card-img">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="">Meram Gençlik</a>
+                                </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Consectetur suscipit nulla delectus dignissimos, doloremque sint.</p>
+                                <div class="card-link-box">
+                                    <a href="" class="card-link">
+                                        Devamını Oku
+                                        <i class="fas fa-angle-double-right card-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer clearfix">
+                                <div class="click-number-box">
+                                    <span class="click-number">123</span>
+                                    Görüntülenme
+                                </div>
+                                <div class="date">04.05.2021</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col n-col">
+                        <div class="card">
+                            <a href="" class="card-img-link">
+                                <img src="img/slider7.jpg" class="card-img">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="">Meram Gençlik</a>
+                                </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Consectetur suscipit nulla delectus dignissimos, doloremque sint.</p>
+                                <div class="card-link-box">
+                                    <a href="" class="card-link">
+                                        Devamını Oku
+                                        <i class="fas fa-angle-double-right card-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer clearfix">
+                                <div class="click-number-box">
+                                    <span class="click-number">123</span>
+                                    Görüntülenme
+                                </div>
+                                <div class="date">04.05.2021</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-left news-icon n-left" onclick="plusNews(-1)"></i>
+                <i class="fas fa-chevron-right news-icon n-right" onclick="plusNews(1)"></i>
+            </div>
+            <!--div.container.relative sonu-->
+        </section>
+        <!--section news sonu-->
+        <section>
+            <div class="container">
+                <div class="section-header">
+                    <i class="fas fa-angle-double-right section-header-icon"></i>
+                    <h2>
+                        <a href="">Faaliyetler</a>
+                    </h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="container relative">
+                <div class="container activities">
+                    <div class="col a-col">
+                        <div class="card">
+                            <a href="" class="card-img-link">
+                                <img src="img/slider1.jpg" class="card-img">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="">Meram Gençlik</a>
+                                </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Consectetur suscipit nulla delectus dignissimos, doloremque sint.</p>
+                                <div class="card-link-box">
+                                    <a href="" class="card-link">
+                                        Devamını Oku
+                                        <i class="fas fa-angle-double-right card-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer clearfix">
+                                <div class="click-number-box">
+                                    <span class="click-number">123</span>
+                                    Görüntülenme
+                                </div>
+                                <div class="date">04.05.2021</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col a-col">
+                        <div class="card">
+                            <a href="" class="card-img-link">
+                                <img src="img/slider2.jpg" class="card-img">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="">Meram Gençlik</a>
+                                </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Consectetur suscipit nulla delectus dignissimos, doloremque sint.</p>
+                                <div class="card-link-box">
+                                    <a href="" class="card-link">
+                                        Devamını Oku
+                                        <i class="fas fa-angle-double-right card-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer clearfix">
+                                <div class="click-number-box">
+                                    <span class="click-number">123</span>
+                                    Görüntülenme
+                                </div>
+                                <div class="date">04.05.2021</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col a-col">
+                        <div class="card">
+                            <a href="" class="card-img-link">
+                                <img src="img/slider3.jpg" class="card-img">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="">Meram Gençlik</a>
+                                </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Consectetur suscipit nulla delectus dignissimos, doloremque sint.</p>
+                                <div class="card-link-box">
+                                    <a href="" class="card-link">
+                                        Devamını Oku
+                                        <i class="fas fa-angle-double-right card-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer clearfix">
+                                <div class="click-number-box">
+                                    <span class="click-number">123</span>
+                                    Görüntülenme
+                                </div>
+                                <div class="date">04.05.2021</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col a-col">
+                        <div class="card">
+                            <a href="" class="card-img-link">
+                                <img src="img/slider4.jpg" class="card-img">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="">Meram Gençlik</a>
+                                </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Consectetur suscipit nulla delectus dignissimos, doloremque sint.</p>
+                                <div class="card-link-box">
+                                    <a href="" class="card-link">
+                                        Devamını Oku
+                                        <i class="fas fa-angle-double-right card-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer clearfix">
+                                <div class="click-number-box">
+                                    <span class="click-number">123</span>
+                                    Görüntülenme
+                                </div>
+                                <div class="date">04.05.2021</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col a-col">
+                        <div class="card">
+                            <a href="" class="card-img-link">
+                                <img src="img/slider5.jpg" class="card-img">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="">Meram Gençlik</a>
+                                </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Consectetur suscipit nulla delectus dignissimos, doloremque sint.</p>
+                                <div class="card-link-box">
+                                    <a href="" class="card-link">
+                                        Devamını Oku
+                                        <i class="fas fa-angle-double-right card-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer clearfix">
+                                <div class="click-number-box">
+                                    <span class="click-number">123</span>
+                                    Görüntülenme
+                                </div>
+                                <div class="date">04.05.2021</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col a-col">
+                        <div class="card">
+                            <a href="" class="card-img-link">
+                                <img src="img/slider6.jpg" class="card-img">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="">Meram Gençlik</a>
+                                </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Consectetur suscipit nulla delectus dignissimos, doloremque sint.</p>
+                                <div class="card-link-box">
+                                    <a href="" class="card-link">
+                                        Devamını Oku
+                                        <i class="fas fa-angle-double-right card-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer clearfix">
+                                <div class="click-number-box">
+                                    <span class="click-number">123</span>
+                                    Görüntülenme
+                                </div>
+                                <div class="date">04.05.2021</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col a-col">
+                        <div class="card">
+                            <a href="" class="card-img-link">
+                                <img src="img/slider7.jpg" class="card-img">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <a href="">Meram Gençlik</a>
+                                </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Consectetur suscipit nulla delectus dignissimos, doloremque sint.</p>
+                                <div class="card-link-box">
+                                    <a href="" class="card-link">
+                                        Devamını Oku
+                                        <i class="fas fa-angle-double-right card-icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-footer clearfix">
+                                <div class="click-number-box">
+                                    <span class="click-number">123</span>
+                                    Görüntülenme
+                                </div>
+                                <div class="date">04.05.2021</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-left activities-icon a-left"></i>
+                <i class="fas fa-chevron-right activities-icon a-right"></i>
+            </div>
+            <!--div.container.relative sonu-->
+        </section>
+        <!--section activities sonu-->
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="container clearfix">
+            <div class="footer-col">
+                <h4>İLETİŞİM</h4>
+                <ul>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Döndolan Mh. Arabul Cd. No: 00/0 Dünya/Uzay
+                    </li>
+                    <li>
+                        <i class="far fa-envelope"></i>
+                        kurankurs@gmail.com
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        (332) 123 45 67
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>TAKİP ET</h4>
+                <ul>
+                    <li>
+                        <a class="social-media-link" href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-media-link" href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-media-link" href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--Copyright-->
+    <div class="copyright">
+        <div class="container">
+            <small>© 2021 Tüm Hakları Saklıdır.</small>
+        </div>
+    </div>
     <!--Javascript-->
+    <script src="responsive-nav.js"></script>
     <script src="home-page.js"></script>
 </body>
 

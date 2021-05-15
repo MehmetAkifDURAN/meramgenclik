@@ -1,0 +1,40 @@
+@import url("home-page.css");
+/*Header*/
+header{
+    text-align: center;
+}
+header div.container{
+    padding: 5rem 0;
+}
+header h1{
+    font-size: 3.6rem;
+    display: inline-block;
+    color: #003A85;
+}
+.hr-style-dark{
+    border: none;
+    border-top: 0.2rem solid;
+    border-color: #CD2127;
+    max-width: 30rem;
+    height: 0;
+    margin: 2rem auto;
+    overflow: visible;
+}
+.hr-style-dark::after{
+    content: "\f111";
+    font-family: "Font Awesome 5 Free";
+    background-color: #fff;
+    color: #CD2127;
+    font-size: 1rem;
+    font-weight: 600;
+    position: relative;
+    padding: 1rem;
+    top: calc(-1.5rem + 1px);
+}
+/*Main*/
+main div.container{
+    display: flex;
+}
+main div.row{
+    display: flex;
+}

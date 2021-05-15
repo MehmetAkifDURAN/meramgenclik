@@ -1,0 +1,196 @@
+/*Media Query*/
+@media screen and (max-width : 1275px){
+    html{
+        font-size: 8px;
+    }
+    .container{
+        max-width: 100%;
+    }
+    header{
+        padding-top: 12.875rem;
+    }
+    .slider{
+        height: calc(100vh - 12.875rem);
+    }
+    .slider-img{
+        height: calc(100vh - 12.875rem);
+    }
+    .arrow{
+        top: calc((100vh - 12.875rem - 6rem) / 2);
+    }
+    .indicator{
+        top: calc(100vh - 12.875rem - 2.625rem);/*24*/
+        left: calc((100vw - 9.64125rem) / 2);/*86.78*/
+    }
+    section .section-header{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    section hr{
+        top: calc(11rem / 2);
+    }
+    .relative{
+        width: 111rem;
+    }
+    .news-icon, .activities-icon{
+        top: calc((47rem - 6rem) / 2);
+    }
+    .col{
+        padding-left: .5rem;
+        padding-right: .5rem;
+    }
+}
+@media screen and (max-width : 992px){
+    section hr{
+        width: 75%;
+    }
+    .relative{
+        width: 76rem;
+    }
+    .col{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+@media screen and (max-width : 768px){
+    html{
+        font-size: 6.5px;
+    }
+    #logo-box{
+        float: none;
+        text-align: left;
+        margin-top: 21.5px;
+    }
+    #logo-link{
+        display: inline-block;
+    }
+    #logo-img{
+        display: inline-block;
+    }
+    .nav-links{
+        float: none;
+        padding-top: 0;
+        display: block;
+    }
+    .nav-links-list{
+        position: static;
+    }
+    .sub-links-list{
+        position: static;
+    }
+    .nav-links.responsive li:not(:first-child){
+        display: none;
+    }
+    .nav-links .nav-item{
+        float: none;
+        text-align: left;
+        display: block;
+    }
+    .nav-item .sub-links-list{
+        display: block;
+    }
+    .sub-links-list .sub-item{
+        border: none;
+        font-size: 1.53846153846rem;
+    }
+    .sub-links-list .sub-item:first-child{
+        margin-top: 0;
+    }
+    .sub-links-list .sub-item .sub-link{
+        background: #fff;
+        color: #444;
+        border: none;
+        text-align: left;
+        padding-left: 8rem;
+    }
+    .sub-links-list .sub-item .sub-link:hover{
+        color: #CD2127;
+    }
+    .nav-links .nav-link{
+        font-size: 2rem;
+        padding-left: 5rem;
+        display: block;
+        text-align: left;
+    }
+    .nav-item .nav-link:hover, .sub-links-list .sub-item .sub-link:hover{
+        background: #CD2127;
+        color: #fff;
+    }
+    .nav-links .nav-icon{
+        display: inline-block;
+        position: absolute;
+        background: transparent;
+        color: #003A85;
+        min-width: 5rem;
+        /* min-height: 1rem; */
+        height: auto;
+        max-width: 5rem;
+        /* max-height: 1rem; */
+        top: calc((19.2307692308rem - 4.92307692308rem) / 2);
+        right: 25px;
+        font-size: 3rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        outline: 0;
+    }
+    .nav-links .nav-icon:hover{
+        background: #003A85;
+        color: #fff;
+    }
+    header{
+        padding-top: 19.2307692308rem;
+    }
+    .slider{
+        height: calc(100vh - 19.2307692308rem);
+    }
+    .slider-img{
+        height: calc(100vh - 19.2307692308rem);
+    }
+    .arrow{
+        top: calc((100vh - 19.2307692308rem - 5.92307692308rem) / 2);
+    }
+    .indicator{
+        top: calc(100vh - 19.2307692308rem - 2.61538461538rem);
+        left: calc((100vw - 9.64461538462rem) / 2);
+    }
+    section hr{
+        width: 70%;
+        top: calc(11.0769230769rem / 2);
+    }
+    .news-icon, .activities-icon{
+        top: calc((46.8461538462rem - 5.92307692308rem) / 2);
+    }
+    footer div.container .footer-col{
+        width: 100%;
+        padding: 3rem;
+    }
+    footer div.footer-col ul li{
+        text-align: center;
+    }
+    .social-media-link{
+        margin-top: 1.5rem;
+        padding-top: 1.19230769231rem;
+    }
+}
+@media screen and (max-width : 576px){
+    section hr{
+        width: 65%;
+    }
+    .relative{
+        width: 38rem;
+    }
+}
+@media screen and (max-width : 425px){
+    section hr{
+        width: 60%;
+    }
+}
+@media screen and (max-width : 375px){
+    section hr{
+        width: 50%;
+    }
+}
