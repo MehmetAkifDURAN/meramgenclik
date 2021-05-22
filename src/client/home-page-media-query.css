@@ -30,14 +30,23 @@
         top: calc(11rem / 2);
     }
     .relative{
-        width: 111rem;
+        width: 114rem;
     }
     .news-icon, .activities-icon{
         top: calc((47rem - 6rem) / 2);
     }
-    .col{
-        padding-left: .5rem;
-        padding-right: .5rem;
+    .news-icon, .activities-icon{
+        padding: 1.5rem 1rem;
+        font-size: 3rem;
+    }
+    .n-right, .a-right{
+        /* border-radius: 0 2rem 2rem 0; */
+        /* right: -4.875rem; */
+        right: -3.875rem;
+    }
+    .n-left, .a-left{
+        /* border-radius: 2rem 0 0 2rem; */
+        left: calc((100vw - (100vw + 3.875rem)));
     }
 }
 @media screen and (max-width : 992px){

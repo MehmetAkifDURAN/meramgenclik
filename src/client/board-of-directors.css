@@ -4,7 +4,7 @@ header{
     text-align: center;
 }
 header div.container{
-    padding: 5rem 0;
+    padding: 5rem 0 2rem;
 }
 header h1{
     font-size: 3.6rem;
@@ -23,7 +23,7 @@ header h1{
 .hr-style-dark::after{
     content: "\f111";
     font-family: "Font Awesome 5 Free";
-    background-color: #fff;
+    background-color: #f4f5f7;
     color: #CD2127;
     font-size: 1rem;
     font-weight: 600;
@@ -32,9 +32,284 @@ header h1{
     top: calc(-1.5rem + 1px);
 }
 /*Main*/
+main{
+    padding: 0 0 4.5rem;
+}
 main div.container{
     display: flex;
+    flex-direction: column;
 }
 main div.row{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+}
+main div.row .column{
+    display: flex;
+    min-width: 50%;
+    max-width: 50%;
+    justify-content: space-around;
+}
+.s-card{
+    border-radius: .8rem;
+    background: #fff;
+}
+.s-img-box{
+    position: relative;
+}
+.s-card-img{
+    display: block;
+    max-width: 25rem;
+    min-width: 25rem;
+    /* height: auto; */
+    max-height: 27rem;
+    min-height: 27rem;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-top-left-radius: .8rem;
+    border-top-right-radius: .8rem;
+}
+.s-img-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    border-top-left-radius: .8rem;
+    border-top-right-radius: .8rem;
+    transition: background-color 0.6s ease;
+}
+.s-img-overlay .icon{
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: .5rem 1.4rem;
+    border-radius: 50%;
+    display: none;
+    transition: color 0.3s ease;
+}
+.s-img-box:hover .s-img-overlay{
+    /* opacity: 0.6; */
+    background: rgba(0, 0, 0, 0.6);
+}
+.s-img-box:hover .icon{
+    display: block;
+    cursor: pointer;
+}
+.icon:hover{
+    /* color: #28A745; */
+    /* color: #CD2127; */
+    color: #003A85;
+}
+.s-card-body{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    text-align: center;
+}
+.s-card-body h5{
+    display: inline-block;
+    font-family: 'Crete Round', serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    padding: .5rem 0;
+    border-bottom: 1px solid #003A85;
+}
+.s-card-body div{
+    font-size: 1.8rem;
+    padding: .5rem 0;
+}
+.card-link-box{
+    display: inline-block;
+    margin: 1rem 0;
+    user-select: none;
+}
+.s-card-footer{
+    border-top: 1px solid #a7a7a7;
+    text-align: center;
+}
+.s-card-footer ul{
+    display: flex;
+    justify-content: center;
+}
+.s-card-footer ul li{
+    display: inline-block;
+    padding: .5rem 1rem;
+    text-align: center;
+}
+.s-social-media-link{
+    display: block;
+    color: #003A85;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2rem;
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid #003A85;
+    border-radius: 50%;
+    padding-top: .9rem;
+    transition: color 0.3s;
+    transition: background-color 0.3s;
+}
+.s-social-media-link:hover{
+    background-color: #003A85;
+    color: #fff;
+    cursor: pointer;
+}
+/*Media Query*/
+@media screen and (max-width : 1140px){
+    .container{
+        max-width: 100%;
+    }
+    .s-card-img{
+        max-width: 22rem;
+        min-width: 22rem;
+        max-height: 25rem;
+        min-height: 25rem;
+    }
+}
+@media screen and (max-width : 992px){
+    #logo-box{
+        float: none;
+        text-align: left;
+        margin-top: 30px;
+    }
+    #logo-link{
+        display: inline-block;
+    }
+    #logo-img{
+        display: inline-block;
+    }
+    .nav-links{
+        float: none;
+        padding-top: 0;
+        display: block;
+    }
+    .nav-links-list{
+        position: static;
+    }
+    .sub-links-list{
+        position: static;
+    }
+    .nav-links.responsive li:not(:first-child){
+        display: none;
+    }
+    .nav-links .nav-item{
+        float: none;
+        text-align: left;
+        display: block;
+    }
+    .nav-item .sub-links-list{
+        display: block;
+    }
+    .sub-links-list .sub-item{
+        border: none;
+    }
+    .sub-links-list .sub-item:first-child{
+        margin-top: 0;
+    }
+    .sub-links-list .sub-item .sub-link{
+        font-size: 1rem;
+        background: #fff;
+        color: #444;
+        border: none;
+        text-align: left;
+        padding-left: 8rem;
+    }
+    .sub-links-list .sub-item .sub-link:hover{
+        color: #CD2127;
+    }
+    .nav-links .nav-link{
+        font-size: 1.3rem;
+        padding-left: 5rem;
+        display: block;
+        text-align: left;
+    }
+    .nav-item .nav-link:hover, .sub-links-list .sub-item .sub-link:hover{
+        background: #CD2127;
+        color: #fff;
+    }
+    .nav-links .nav-icon{
+        display: inline-block;
+        position: absolute;
+        background: transparent;
+        color: #003A85;
+        min-width: 5rem;
+        /* min-height: 1rem; */
+        height: auto;
+        max-width: 5rem;
+        /* max-height: 1rem; */
+        top: calc(18.9rem / 2);
+        transform: translate(-50%, -50%);
+        right: 25px;
+        font-size: 3rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        outline: 0;
+    }
+    .nav-links .nav-icon:hover{
+        background: #003A85;
+        color: #fff;
+    }
+    header{
+        padding-top: 18.9rem;
+    }
+    main div.row{
+        flex-direction: column;
+        align-items: center;
+    }
+    main div.row:not(:first-child){
+        padding: 0;
+    }
+    main div.row .column{
+        min-width: 100%;
+        max-width: 100%;
+        padding: 3rem 0;
+    }
+    .s-card-img{
+        max-width: 25rem;
+        min-width: 25rem;
+        max-height: 27rem;
+        min-height: 27rem;
+    }
+    footer div.container .footer-col{
+        width: 100%;
+        padding: 3rem;
+    }
+    footer div.footer-col ul li{
+        text-align: center;
+    }
+    .social-media-link{
+        margin-top: 1.5rem;
+    }
+}
+@media screen and (max-width : 768px){
+    main div.row .column{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    main div.row .column .s-col{
+        padding: 3rem 0;
+    }
+    .s-card-img{
+        max-width: 30rem;
+        min-width: 30rem;
+        max-height: 32rem;
+        min-height: 32rem;
+    }
+}
+@media screen and (max-width : 425px){
+    footer div.container .footer-col{
+        padding: 3rem 0;
+    }
 }
