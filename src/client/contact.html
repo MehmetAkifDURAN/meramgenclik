@@ -1,22 +1,183 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonts-->
+    <!-- font-family: 'Crete Round', serif; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap" rel="stylesheet">
+    <!-- font-family: 'Raleway', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!--Icon-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <title>İletişim</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+
 <body>
-
-<h1>My First Google Map</h1>
-
-<div id="googleMap" style="width:100%;height:400px;"></div>
-
-<script>
-function myMap() {
-var mapProp= {
-  center:new google.maps.LatLng(51.508742,-0.120850),
-  zoom:5,
-};
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlRRj0s6rUui9OjUJZiuCGBXLqEXjNf8Q&callback=myMap"></script>
-
+    <!--Navbar-->
+    <nav>
+        <div class="container clearfix">
+            <div id="logo-box">
+                <a href="#" id="logo-link">
+                    <img id="logo-img" src="img/diyanet-logo.jpg">
+                </a>
+            </div>
+            <div class="nav-links responsive">
+                <ul class="nav-links-list">
+                    <li class="nav-item">
+                        <button class="nav-link nav-icon">
+                            <i class="fas fa-bars menu-icon"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ANASAYFA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">KURUMSAL</a>
+                        <ul class="sub-links-list">
+                            <li class="sub-item">
+                                <a href="about-us.html" class="sub-link">HAKKIMIZDA</a>
+                            </li>
+                            <li class="sub-item">
+                                <a href="board-of-directors.html" class="sub-link">YÖNETİM KURULU</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">HABERLER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">ETKİNLİKLER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">İLETİŞİM</a>
+                    </li>
+                </ul>
+            </div>
+            <!--div.nav-links sonu-->
+        </div>
+        <!--div.container sonu-->
+    </nav>
+    <!--Header-->
+    <header>
+        <div class="container">
+            <h1>İletişim</h1>
+            <hr class="hr-style-dark">
+        </div>
+    </header>
+    <!--Main-->
+    <main>
+        <div class="container">
+            <div class="contact-info">
+                <div class="form-box">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="name">Ad</label>
+                            <input type="text" name="name" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="surname">Soyad</label>
+                            <input type="text" name="surname" id="surname" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Tel. No</label>
+                            <input type="tel" name="phone" id="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesaj</label>
+                            <textarea name="message" id="message" class="form-control" cols="30" rows="10"
+                                required></textarea>
+                        </div>
+                        <div class="form-group form-btn">
+                            <input type="submit" value="Gönder" class="btn">
+                        </div>
+                    </form>
+                </div>
+                <div class="contact">
+                    <ul>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            Döndolan Mh. Arabul Cd. No: 00/0 Dünya/Uzay
+                        </li>
+                        <li>
+                            <i class="far fa-envelope"></i>
+                            kurankurs@gmail.com
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            (332) 123 45 67
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="googleMap" class="map"></div>
+        </div>
+    </main>
+    <!--Footer-->
+    <footer>
+        <div class="container clearfix">
+            <div class="footer-col">
+                <h4>İLETİŞİM</h4>
+                <ul>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        Döndolan Mh. Arabul Cd. No: 00/0 Dünya/Uzay
+                    </li>
+                    <li>
+                        <i class="far fa-envelope"></i>
+                        kurankurs@gmail.com
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        (332) 123 45 67
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>TAKİP ET</h4>
+                <ul>
+                    <li>
+                        <a class="social-media-link" href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-media-link" href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-media-link" href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--Copyright-->
+    <div class="copyright">
+        <div class="container">
+            <small>© 2021 Tüm Hakları Saklıdır.</small>
+        </div>
+    </div>
+    <!--Javascript-->
+    <script src="responsive-nav.js"></script>
+    <script src="contact.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlRRj0s6rUui9OjUJZiuCGBXLqEXjNf8Q&callback=myMap"></script>
 </body>
+
 </html>
