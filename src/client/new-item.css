@@ -1,64 +1,69 @@
 @import url("home-page.css");
-/*Header*/
-header{
-    text-align: center;
+body{
+    background: #fff;
 }
-header div.container{
-    padding: 5rem 0 2rem;
-}
-header h1{
-    font-size: 3.6rem;
-    display: inline-block;
-    color: #003A85;
-}
-.hr-style-dark{
-    border: none;
-    border-top: 0.2rem solid;
-    border-color: #CD2127;
-    max-width: 30rem;
-    height: 0;
-    margin: 2rem auto;
-    overflow: visible;
-}
-.hr-style-dark::after{
-    content: "\f111";
-    font-family: "Font Awesome 5 Free";
-    background-color: #f4f5f7;
-    color: #CD2127;
-    font-size: 1rem;
-    font-weight: 600;
-    position: relative;
-    padding: 1rem;
-    top: calc(-1.5rem + 1px);
-}
-/* Main */
+/*Main*/
 main{
-    padding: 0 0 4.5rem;
-    color: #000;
-    text-align: justify;
+    padding: 17.9rem 0 7.5rem;
+    background: #fff;
+    /* padding: 7.5rem 0; home-page*/
+    /* padding: 0 0 4.5rem; news*/
+}
+main div.container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    /* box-shadow: 0px 14px 21px rgba(92, 92, 92, 0.15); */
+    box-shadow: 0px 4px 21px 0px rgba(92, 92, 92, 0.15);
+}
+main .container .new-item-img-box{
+    border-bottom: 5px solid #003A85;
+}
+main .container .new-item-img{
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 60rem;
+    min-height: 60rem;
+    /* height: auto; */
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+main .container .new-item-header-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 1rem;
+}
+main .container .new-item-header-box .new-item-header{
+    color: #003A85;
+    font-size: 3rem;
+    font-style: oblique;
+}
+main .container .new-item-header-box .new-item-date{
+    color: #003A85;
+    opacity: .6;
+}
+main .container .new-item-content{
+    padding: 1.5rem 1rem 3rem;
+}
+main .container .new-item-content article p{
     font-size: 2rem;
     line-height: 150%;
-}
-article p{
     font-style: italic;
+    text-align: justify;
     text-indent: 5rem;
-    padding: 2rem 0;
 }
-article p::first-letter{
+main .container .new-item-content article p::first-letter{
     font-size: 4rem;
-}
-main h6{
-    color: #003A85;
-    font-family: 'Crete Round', serif;
-    font-style: oblique;
-    font-size: 3rem;
-    padding: 3rem 0;
 }
 @media screen and (max-width : 1200px){
     main .container{
         max-width: 100%;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 }
 @media screen and (max-width : 992px){
@@ -148,8 +153,13 @@ main h6{
         background: #003A85;
         color: #fff;
     }
-    header{
-        padding-top: 18.9rem;
+    main{
+        padding-top: 23.9rem;
+    }
+    main .container .new-item-img{
+        max-height: 0%;
+        min-height: 0%;
+        height: auto;
     }
     footer div.container .footer-col{
         width: 100%;
@@ -163,6 +173,20 @@ main h6{
     }
 }
 @media screen and (max-width : 425px){
+    main .container{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    main .container .new-item-header-box .new-item-header{
+        font-size: 2.5rem;
+    }
+    main .container .new-item-content article p{
+        font-size: 1.6rem;
+        text-indent: 4rem;
+    }
+    main .container .new-item-content article p::first-letter{
+        font-size: 3rem;
+    }
     footer div.container .footer-col{
         padding: 3rem 0;
     }

@@ -41,10 +41,10 @@
                         <a href="home-page.html" class="nav-link">ANASAYFA</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">KURUMSAL</a>
+                        <a href="#" class="nav-link">KURUMSAL</a>
                         <ul class="sub-links-list">
                             <li class="sub-item">
-                                <a href="" class="sub-link">HAKKIMIZDA</a>
+                                <a href="about-us.html" class="sub-link">HAKKIMIZDA</a>
                             </li>
                             <li class="sub-item">
                                 <a href="#" class="sub-link">YÖNETİM KURULU</a>
@@ -52,13 +52,13 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">HABERLER</a>
+                        <a href="news.html" class="nav-link">HABERLER</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">ETKİNLİKLER</a>
+                        <a href="activities.html" class="nav-link">ETKİNLİKLER</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">İLETİŞİM</a>
+                        <a href="contact.html" class="nav-link">İLETİŞİM</a>
                     </li>
                 </ul>
             </div>
@@ -84,7 +84,7 @@
                             <div class="s-img-overlay">
                                 <div class="icon">
                                     <!-- <i class="fas fa-user"></i> -->
-                                    <i class="far fa-user"></i>
+                                    <i class="far fa-user" onclick="showPersonInfo()"></i>
                                 </div>
                             </div>
                         </div>
@@ -95,22 +95,59 @@
                         <div class="s-card-footer">
                             <ul>
                                 <li>
-                                    <a class="s-social-media-link" href="">
+                                    <a class="s-social-media-link" href="#">
                                         <i class="fab fa-facebook-f"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="s-social-media-link" href="">
+                                    <a class="s-social-media-link" href="#">
                                         <i class="fab fa-instagram"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="s-social-media-link" href="">
+                                    <a class="s-social-media-link" href="#">
                                         <i class="fab fa-twitter"></i>
                                     </a>
                                 </li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+                <div id="person" class="fade none">
+                    <div class="person-name">
+                        <h4>Mehmet Akif Duran</h4>
+                        <button class="btn-info">
+                            <i class="fas fa-times" onclick="fadePersonInfo()"></i>
+                        </button>
+                    </div>
+                    <div class="person-info">
+                        <div class="job">
+                            <h5>Yönetim Kurulu Başkanı</h5>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a class="s-social-media-link" href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="s-social-media-link" href="#">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="s-social-media-link" href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <article>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus in quas dolor
+                                explicabo architecto laboriosam perferendis sint odio perspiciatis atque quasi
+                                similique, at tempore earum minima voluptatem vel expedita rem?</p>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -766,6 +803,7 @@
     </div>
     <!--Javascript-->
     <script src="responsive-nav.js"></script>
+    <script src="board-of-directors.js"></script>
 </body>
 
 </html>
