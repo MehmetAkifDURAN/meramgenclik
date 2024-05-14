@@ -1,2 +1,2 @@
-# kurankursu
-Kuran Kursu Sitesi
+# MeramGençlik
+Meram İlçesi Gençlik Merkezi Resmi Sitesi
